@@ -9,6 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 .logo,.header-right,.well{
 	background:none;
 	border:none;
+	box-shadow:none;
 }
 body{
 	background:#F6F6F7;
@@ -19,47 +20,292 @@ body a{
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 }
-.bg{
-	background:url(../images/head-bg.jpg) no-repeat 0px 0px;
+/* -------------------buttons---------------------- */
+.btn-xl {
+	height:120px;
+	width:120px;
+    border-radius: 50%;
+    padding: 45px 27px;
+    border-color: #cddf11;
+	text-transform: uppercase;
+    font-family: 'Raleway','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #cddf11;
 }
-/*----start-header----*/
-.header{
-	padding: 1em 0;
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #2D8A15;
+    color: black;
+    background-color: #2D8A15;
 }
-.logo{
-	margin-top: 1em;
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
 }
-.header-right{
-	color:#CAD1DB;
-	font-family: 'Open Sans', sans-serif;
-	font-size:1.5em;
-	text-align:right;
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #fed136;
+    background-color: #fed136;
 }
-.header-right a{
-	text-decoration:none;
+
+.btn-xl .badge {
+    color: #fed136;
+    background-color: #fff;
 }
-.header-right p i a{
-	margin-right: 1.2em;
-	color: #CAD1DB;
-	display: inline-block;
+
+
+
+
+
+
+/* -------------------------------header----------------------- */
+/* i NAPIS NA OBRAZKU*/
+
+.zero2hero {
+height:100vh;}
+
+.intro-header{
+
+background-color:white;
+height: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment:scroll;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;
+
 }
-.header-right p i a:hover{
-	color:#67BF95;
+
+.intro-header .site-heading{
+
+padding:0;
+color:#f7f7f7}
+
+@media only screen and (min-width:768px){
+
+.intro-header .site-heading{
+padding:0}
 }
-.login{
-	background: #3D4B60;
-	color: #CAD1DB;
-	padding: 0.4em 1.5em;
-	text-decoration: none;
-	border-radius: 0.3em;
-	display: inline-block;
+
+.intro-header .site-heading {
+text-align:center
+}
+.intro-header .site-heading h1{
+font-family: 'Raleway', sans-serif;
+margin-top:0;
+font-weight:800;
+font-size:40px;
+color#f7f7f7;
+
+
+}
+
+@media only screen and (min-width:768px){
+.intro-header .site-heading h1{
+font-size:80px;}
+}
+
+
+
+.intro-header .site-heading .subheading {
+
+color:#777;
+line-height: 1.1;
+font-size:40px;
+display:block;
+font-family: 'Raleway', sans-serif;
+font-weight:500;
+padding-bottom:70px;
+margin:10px 0 0}
+/* ----koniec headera---------- */
+
+
+/* ----------------------------------g³ówny kontent--------------------- */
+
+.segment {
+    overflow: hidden;
+	color:#999;
+	padding-left: 20px;
+	padding-right:20px;
+	margin-bottom:70px;
+    margin-top:100px;
+	}
+	
+
+.segment-heading {
+    font-size: 50px;
+	text-transform:lowercase;
+	text-align:center;
+	margin-bottom:50px;
+	color:#777777;
 	
 }
-.login:hover{
-	color:#67BF95;
-	background:#303B4A;
+
+
+@media(max-width:1200px) {
+   
+    .krecha {
+        margin: 50px 0;
+    }
+
+    .segment-image.pull-left {
+        margin-right: 20px;
+    }
+
+    .segment-image.pull-right {
+        margin-left: 20px;
+    }
+
+    .segment-heading {
+        font-size: 35px;
+    }
 }
-/*----//End-header----*/
+
+@media(max-width:991px) {
+    
+    .krecha {
+        margin: 40px 0;
+    }
+
+    .segment-image {
+        max-width: 50%;
+
+    }
+
+    .segment-image.pull-left {
+        margin-right: 10px;
+    }
+
+    .segment-image.pull-right {
+        margin-left: 10px;
+    }
+
+    .segment-heading {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .krecha {
+        margin: 40px 0;
+    }
+
+    .segment-heading {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:668px) {
+    
+
+    .krecha	{
+        margin: 30px 0;
+    }
+}
+
+
+
+@media(max-width:375px) {
+    .krecha {
+        margin: 10px 0;
+    }
+
+    .segment-image {
+        max-width: 100%;
+    }
+
+    .segment-image.pull-left {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .segment-image.pull-right {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+}
+
+
+/*  ---------------pudelko------------------ */
+
+.pudelko
+{margin:0;
+padding:0;
+background-image: url(../images/pudelko.jpg);
+}
+
+.pudelko-content {
+text-align:center;
+text-align:center;
+color:white;
+font-size:20px;
+font-weight:200;
+margin-bottom:30px;
+margin-left:30px;
+
+}
+
+@media only screen and (min-width:768px){
+.pudelko-content {
+font-size:26px;
+margin-bottom:70px;
+}
+}
+
+.niebieski{
+color:#1FA4C6;
+font-weight:400;
+text-transform:uppercase;
+
+}
+
+.czerwony{
+color:#DE2020;
+font-weight:400;
+/* text-transform:uppercase; */
+}
+ /* ----------------ko³ka--------------- */
+
+ .kolka
+{background-color: rgba(0,0,0,0.7);
+background-position: center;
+padding:0;px
+margin:0;
+color:#d2d2d2;
+ }
+
+.img-center {
+    margin: 10px auto;
+
+}
+
+
+
+
 /*----start-slide-banner---*/
 .slide-banner-left{
 	font-family: 'Enriqueta', serif;
@@ -113,6 +359,7 @@ body a{
 .top-grid-center h2{
 	color: #505965;
 	font-size: 3.2em;
+	text-align:center;
 	font-family: 'Enriqueta', serif;
 }
 .top-grid-center p {
@@ -121,6 +368,7 @@ body a{
 	margin: 1em 0 1.5em;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.8em;
+	text-align:center;
 }
 /*----start-mid-grids----*/
 .carousel-control.right,.carousel-control.left{
@@ -1538,6 +1786,23 @@ img.mfp-img {
 	.container{
 		width:90%;
 		font-size:70%;
+	}
+	.login {
+		background: #3d4b60 none repeat scroll 0 0;
+		border-radius: 0.3em;
+		color: #cad1db;
+		display: inline-block;
+		padding: 0.4em 1.5em;
+		text-decoration: none;
+	}
+	body a {
+		transition: all 0.5s ease 0s;
+	}
+	.header-right {
+		color: #cad1db;
+		font-family: "Open Sans",sans-serif;
+		font-size: 1.5em;
+		text-align: right;
 	}
 	.login-info{
 		text-align:center;
